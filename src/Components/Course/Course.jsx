@@ -1,4 +1,4 @@
-const Course = ({ course }) => {
+const Course = ({ course, handleCart }) => {
   const { credit, description, id, name, photo, price } = course;
 
   return (
@@ -35,7 +35,12 @@ const Course = ({ course }) => {
             </div>
           </div>
           <div className="card-actions justify-center">
-            <button className="btn btn-primary w-full">Buy Now</button>
+            <button
+              onClick={() => handleCart(course)}
+              className="btn btn-primary w-full"
+            >
+              Buy Now
+            </button>
           </div>
         </div>
       </div>
