@@ -14,7 +14,7 @@ function App() {
     const creditValue = cart.reduce((a, b) => a + b.credit, 0);
 
     if (creditValue + course.credit > totalCredit) {
-      return alert("15 over");
+      return alert("only 15 credit Available");
     }
 
     const newCart = [...cart, course];
