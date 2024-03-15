@@ -7,7 +7,7 @@ function App() {
     <div className="poppins-font container mx-auto">
       <div>
         <Header />
-        <div className="flex">
+        <div className="flex gap-4">
           <Courses />
           <SelectedCart />
         </div>

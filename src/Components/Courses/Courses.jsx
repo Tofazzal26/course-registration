@@ -12,9 +12,11 @@ const Courses = () => {
 
   return (
     <div className="flex-1">
-      {courses.map((course) => (
-        <Course course={course} key={course.id} />
-      ))}
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+        {courses.map((course) => (
+          <Course course={course} key={course.id} />
+        ))}
+      </div>
     </div>
   );
 };
